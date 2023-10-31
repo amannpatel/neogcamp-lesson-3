@@ -2,132 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="keyword"
+      content="AmanPatel,amanpatel,Aman Patel , aman patel, aman, aman-portfolio, javascript, react, developer, web developer, assam"
+    />
+    <meta
+      name="description"
+      content="Hello, I am Aman Patel. A enthusiast Web Developer and soon am going to triump into the Tech Industry."
+    />
+    <meta name="author" content="Aman Patel" />
+    <meta name="copyright" content="AmanPatel" />
+    <meta name="robots" content="follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Component Library</title>
+    <link rel=" icon" href="/images/titlebar-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Home | amanpatel</title>
   </head>
   <body>
-    <h1>Aman's component library</h1>
-    <p>
-      I am attending neog.camp and I want to make a library which would make all
-      my projects look good and consistent.
-    </p>
-
-    <hr />
-
-    <h2>@typography</h2>
-
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <p>
-      Let me show you the normal text. This is free flowing and will wrap at the
-      end like a paragraph.
-    </p>
-    <small> This is relatively smaller text. </small>
-    <hr />
-
-    <h2>@containers</h2>
-
-    <h3>Fluid Container</h3>
-    <div class="container">
-      This is a fluid container and it will go till the end of the page.
-    </div>
-
-    <h3>Center container</h3>
-    <div class="container container-center">
-      This is a centered container and it will go till the specified width
-    </div>
-    <hr />
-
-    <h2>@links</h2>
-    <a class="link link-primary" href="/">Primary Link</a>
-    <a class="link link-secondary" href="/">Secondary Link</a>
-    <hr />
-
-    <h2>@lists</h2>
-    <h3>Unordered list</h3>
-    <p>This list will not have bullets</p>
-    <ul class="list-bullet-none">
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-    </ul>
-
-    <h3>Unordered inline list</h3>
-    <ul class="list-bullet-none">
-      <li class="list-item-inline">Inline Item One</li>
-      <li class="list-item-inline">Inline Item Two</li>
-      <li class="list-item-inline">Inline Item Three</li>
-    </ul>
-
-    <h3>Reverse ordered list</h3>
-    <ol reversed>
-      <li>Milk</li>
-      <li>Eggs</li>
-      <li>Bread</li>
-    </ol>
-    <hr />
-
-    <h2>@nav</h2>
+    <!-- Navbar -->
     <nav class="navigation container">
-      <div class="nav-brand">iAmBrand</div>
+      <div class="nav-brand">Aman Patel</div>
       <ul class="list-bullet-none nav-pills">
         <li class="list-item-inline">
           <a class="link link-active" href="/">Home</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="/">Products</a>
+          <a class="link" href="/projects.html">Projects</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="/">About</a>
+          <a class="link" href="/blogs.html">Blogs</a>
         </li>
       </ul>
     </nav>
-    <hr />
-
-    <h2>@header</h2>
+    <!-- Header -->
     <header class="hero">
-      <img class="hero-img" src="./images/hero.svg" />
       <h1 class="hero-heading">
-        Aman Patel the <span class="heading-inverted">web developer</span>
+        Hi, I'm
+        <span class="heading-inverted">Aman</span>
       </h1>
+      <img class="hero-img" src="./images/hero.svg" />
+      <h2 class="hero-heading">
+        A full-stack <span class="heading-inverted">Web Developer</span>
+      </h2>
     </header>
-    <hr />
 
-    <h2>@section</h2>
-    <section class="section">
-      <div class="container container-center">
-        <h1>White section</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus amet et molestias architecto impedit, vel corporis
-          eligendi. Doloremque id eaque, impedit aliquid molestias minus, est
-          iure dolorum cum harum commodi?
-        </p>
-      </div>
-    </section>
-
+    <!-- Skills Section -->
     <section class="section ow">
       <div class="container container-center">
-        <h1>Off white section</h1>
+        <h1>Technologies</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias natus
-          necessitatibus numquam quasi aliquam impedit id ratione? Ullam sequi,
-          cum non assumenda, aliquam magnam, officia totam illum eaque odio
-          earum.
+          I possess expertise in a diverse array of web development
+          technologies, including HTML5, CSS3, Git, GitHub, JavaScript, Node.js,
+          React, PHP, MongoDB, and Express.js
         </p>
       </div>
     </section>
-    <hr />
 
-    <h2>@footer</h2>
+    <!-- Projects Section -->
+    <section class="section">
+      <div class="container container-center">
+        <h1>Projects</h1>
+        <p>
+          I like to showcase my work and thus, you can see my projects hosted
+          online
+        </p>
+        <a class="link link-primary" href="/">Browse Projects</a>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="section ow">
+      <div class="container container-center">
+        <h1>Blogs</h1>
+        <p>
+          I am also working on some technical and non technical blogs. I like to
+          document my journey of learning.
+        </p>
+        <a class="link link-secondary" href="/">Read Blogs</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-header">Some small heading inside footer</div>
+      <div class="footer-header">Connect Me On</div>
       <ul class="social-link list-bullet-none">
-        <li class="list-item-inline"><a class="link" href="/">Socialone</a></li>
-        <li class="list-item-inline"><a class="link" href="/">SocialTwo</a></li>
         <li class="list-item-inline">
-          <a class="link" href="/">SocialThree</a>
+          <a class="link" href="https://github.com/amannpatel" target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/amanpatell/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://twitter.com/amann_patell"
+            target="_blank"
+            >X</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.instagram.com/amann.kabir/"
+            target="_blank"
+            >Instagram</a
+          >
         </li>
       </ul>
     </footer>

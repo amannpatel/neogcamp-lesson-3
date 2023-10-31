@@ -16,6 +16,11 @@ hr {
   margin: 1.5rem 0rem;
 }
 
+/* spaces */
+.margin-md {
+  margin: 2rem;
+}
+
 /* Container */
 .container {
   padding: 0rem 1rem;
@@ -28,8 +33,10 @@ hr {
 
 /* Links */
 .link {
+  box-sizing: border-box;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  /* margin: 1rem 0rem; */
 }
 .link-primary {
   background-color: var(--primary-color);
@@ -80,6 +87,7 @@ hr {
 /* header */
 .hero {
   padding: 2rem;
+  padding-top: 5rem;
 }
 
 .hero .hero-img {
@@ -121,6 +129,11 @@ hr {
 
 .footer .link {
   color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
 }
 
 .footer ul {
