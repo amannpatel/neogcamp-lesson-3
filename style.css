@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary-color: #22d3ee;
   --dark-gray: #6b7280;
   --off-white: #f3f4f6;
+  --border-color: #f9fafb;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
@@ -42,12 +42,25 @@ hr {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
   color: #fff;
+  transition: all ease 0.3s;
 }
 
 .link-secondary {
   color: var(--primary-color);
   border-radius: 0.5rem;
   border: 1px solid var(--primary-color);
+  transition: all ease 0.3s;
+}
+
+.link-primary:hover {
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.link-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Lists */
@@ -99,6 +112,7 @@ hr {
 .hero .hero-heading {
   text-align: center;
   padding-top: 1rem;
+  font-size: 3rem;
   color: var(--dark-gray);
 }
 
@@ -108,8 +122,20 @@ hr {
 
 /* sections */
 .section {
+  border: 1px solid var(--off-white);
   padding: 2rem;
+  width: fit-content;
+  margin: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 18px;
 }
+.section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
 .section h1 {
   text-align: center;
 }
@@ -121,7 +147,7 @@ hr {
 /* footer */
 .footer {
   background-color: var(--primary-color);
-  padding: 2rem 1rem;
+  padding: 0.5rem;
   text-align: center;
   color: white;
   border-top-right-radius: 1rem;
@@ -129,13 +155,22 @@ hr {
 
 .footer .link {
   color: white;
+  font-size: 1.3rem;
+}
+
+.footer .link:hover {
+  transform: scale(2);
 }
 
 .footer .footer-header {
-  font-weight: bold;
-  font-size: large;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .footer ul {
   padding-inline-start: 0px;
+}
+
+.footer-msg {
+  /* margin-top: 40px; */
 }
